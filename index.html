@@ -172,42 +172,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>使用AWS亚马逊云搭建v2ray机场，特点稳定，速度不错，搭建简单。条件：亚马逊账号，一张信用卡，另外每月需要3.5美元（1T流量）</p>
-<p>1.登陆AWS<a target="_blank" rel="noopener" href="https://aws.amazon.com/cn/">登陆</a><br>2.搜索Lightsail<br>3.点击创建实例按钮创建一个实例<br>4.实例选项如下图所示</p>
-
-<img src="/2022/06/15/aws-v2ray-build/pay.png" class="" title="image2">
-<p>5.配置服务器点击下方按钮</p>
-<img src="/2022/06/15/aws-v2ray-build/config.png" class="" title="image3">
-<p>6.这里使用233的v2ray开源项目<a target="_blank" rel="noopener" href="https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC">链接</a><br>(1) 切换到root用户</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su</span><br></pre></td></tr></table></figure>
-<p>(2)输入命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -s -L https://git.io/v2ray.sh)</span><br></pre></td></tr></table></figure>
-<p>(3)这里选择 1 install<br><img src="2022/06/15/aws-v2ray-build/config1.png" alt="pic4"></p>
-<img src="/2022/06/15/aws-v2ray-build/config1.png" class="" title="image3">
-
-<p>(4)选择Tcp</p>
-<img src="/2022/06/15/aws-v2ray-build/config2.png" class="" title="image4">
-<p>(5)设置端口随便设置，记住</p>
-<img src="/2022/06/15/aws-v2ray-build/config3.png" class="" title="image5">
-<p>(6)配置广告拦截，NO, 配置shadowsocket也选择NO</p>
-<img src="/2022/06/15/aws-v2ray-build/config4.png" class="" title="image6">
-<p>(7)点击回车进行安装</p>
-<img src="/2022/06/15/aws-v2ray-build/config5.png" class="" title="image7">
-<p>(8)安装成功</p>
-<img src="/2022/06/15/aws-v2ray-build/image_2022-06-14-23-20-03.png" class="" title="image8">
-<p>7.打开实例的防火墙，并配置静态IP<br>(1)点击实例右上角选择管理<br>(2)创建静态IP并附加到实例上</p>
-<img src="/2022/06/15/aws-v2ray-build/config6.png" class="" title="image8">
-<img src="/2022/06/15/aws-v2ray-build/congfig7.png" class="" title="image9">
-<p>(3)配置防火墙 添加tcp + 你配置的端口 udp +你配置的端口</p>
-<img src="/2022/06/15/aws-v2ray-build/config8.png" class="" title="image10">
-<p>– 配置完成 –<br>8.链接测试<br>(1)启动server 进入root用户模式 输入以下命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v2ray qr</span><br></pre></td></tr></table></figure>
-<p>(2)生成链接复制到浏览器</p>
-<img src="/2022/06/15/aws-v2ray-build/config9.png" class="" title="image11">
-<p>(3)copy 生成信息到v2ray 客户端</p>
-<img src="/2022/06/15/aws-v2ray-build/config10.png" class="" title="image12">
-<p>(4)选中你的服务器地址，然后打开浏览器进行链接测试</p>
-
+        aws+v2ray 搭建机场 输入密码查看
+        
+          <a class="article-more-a" href="/2022/06/15/aws-v2ray-build/#more">more >></a>
+        
       
 
       
